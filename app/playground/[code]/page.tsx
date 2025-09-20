@@ -41,14 +41,18 @@ export default function PlaygroundPage() {
 
     try {
       const stream = await runDemo(service.code, input);
-      const reader = stream.getReader();
+      const reader = (stream as ReadableStream<any>).getReader();
       const decoder = new TextDecoder();
 
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
 
-        const chunk = decoder.decode(value, { stream: true });
+        const chunk =
+          typeof value === "string"
+            ? value
+            : decoder.decode(value, { stream: true });
+
         const lines = chunk.split("\n").filter((line) => line.trim());
         setLogs((prev) => [...prev.slice(-9), ...lines].slice(-10));
       }
