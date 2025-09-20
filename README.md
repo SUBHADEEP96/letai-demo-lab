@@ -22,47 +22,6 @@ A modern AI solutions playground and demo lab, built with Next.js, TypeScript, a
 - [Sonner](https://sonner.emilkowal.ski/) (toasts)
 - [ESLint](https://eslint.org/) for linting
 
-## Getting Started
-
-1. **Install dependencies:**
-
-   ```sh
-   pnpm install
-   # or
-   npm install
-   # or
-   yarn install
-   ```
-
-2. **Run the development server:**
-
-   ```sh
-   pnpm dev
-   # or
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000) to view the app.
-
-3. **Build for production:**
-
-   ```sh
-   pnpm build
-   # or
-   npm run build
-   # or
-   yarn build
-   ```
-
-## Project Structure
-
-- `app/` — Next.js app directory (routes, pages, layouts)
-- `components/` — Reusable UI and feature components
-- `lib/` — Business logic, service definitions, and utilities
-- `public/` — Static assets (SVGs, images)
-
 ## AI Solutions Catalog
 
 The lab includes demos for:
