@@ -69,8 +69,7 @@ export default function Home() {
           </p>
           <p className="text-bold text-muted-foreground max-w-2xl mx-auto">
             <i>
-              WE USE AI WITH PURPOSE: Custom AI Solutions to Solve Complex,
-              High-Impact Challenges
+              -- Custom AI Solutions to Solve Complex, High-Impact Challenges --
             </i>
           </p>
         </div>

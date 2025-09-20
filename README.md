@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# letsAI-Lab
+
+A modern AI solutions playground and demo lab, built with Next.js, TypeScript, and Tailwind CSS. letsAI-Lab showcases 20+ enterprise-ready AI/ML solutions across domains like RAG, Copilot, Vision, Healthcare, Finance, Manufacturing, NLP, and more.
+
+## Features
+
+- **AI Solution Gallery:** Browse, search, and filter a curated set of AI demos by category and status.
+- **Live Demos:** Run interactive, scenario-driven demos for each solution with streaming logs.
+- **Solution Details:** View KPIs, tags, and business context for each AI service.
+- **Playground Mode:** Test and interact with AI services using custom inputs.
+- **ChatBot Integration:** Simulate conversations and analytics with visual feedback.
+- **Modern UI:** Responsive, accessible design using Radix UI, Tailwind CSS, and custom components.
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/) (App Router, Client Components)
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/) (Dialog, Select, Tabs)
+- [Lucide Icons](https://lucide.dev/)
+- [Sonner](https://sonner.emilkowal.ski/) (toasts)
+- [ESLint](https://eslint.org/) for linting
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```sh
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```sh
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Learn More
+3. **Build for production:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   pnpm build
+   # or
+   npm run build
+   # or
+   yarn build
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `app/` — Next.js app directory (routes, pages, layouts)
+- `components/` — Reusable UI and feature components
+- `lib/` — Business logic, service definitions, and utilities
+- `public/` — Static assets (SVGs, images)
 
-## Deploy on Vercel
+## AI Solutions Catalog
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The lab includes demos for:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **RAG:** Enterprise Knowledge Navigator
+- **Copilot:** RetailGPT, Meeting Assistant, Customer Support Bot, etc.
+- **Vision:** Quality Control, Plant Disease Detection, Object Tracking
+- **Healthcare:** Clinical Decision Support, Medical Training
+- **Finance:** Risk Advisor
+- **Manufacturing:** Predictive Maintenance
+- **Compliance & Legal:** Regulatory QA, Document Analysis
+- **NLP:** Blog Generator, Summarization, Doc Intelligence
+- **ITOps, Marketing, Real-Estate, Time-Series** and more
+
+Each solution features:
+
+- Business scenario walkthroughs
+- KPIs and tags
+- Interactive demo logs
+- Chat and analytics simulation
+
+## Customization
+
+- Add/edit solutions in `lib/services.ts`
+- UI components in `components/`
+- Styles in `app/globals.css` and Tailwind config
+
+## License
+
+This project is for demo and educational purposes. For commercial use, please contact the author (https://www.iamsubhadeep.dev/).
+
+---
+
+Made with ❤️ by letsAI-Lab (https://www.iamsubhadeep.dev/).
