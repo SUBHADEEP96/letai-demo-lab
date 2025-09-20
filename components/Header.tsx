@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { BarChart3, Database, GitBranch } from "lucide-react";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -11,9 +12,9 @@ export function Header() {
             <div className="w-8 h-8 rounded-lg brand-gradient flex items-center justify-center">
               <span className="text-white font-bold text-sm">LA</span>
             </div>
-            <a className="text-xl font-bold" href="/">
+            <Link className="text-xl font-bold" href="/">
               letsAI-Lab
-            </a>
+            </Link>
           </div>
 
           {/* CTA Buttons */}
