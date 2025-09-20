@@ -59,18 +59,13 @@ export default function Home() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">
             AI Solutions{" "}
-            <span className="brand-gradient bg-clip-text text-transparent">
+            <span className="bg-white bg-clip-text text-transparent">
               Showcase
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Explore our comprehensive suite of AI-powered solutions designed to
             transform your business operations across industries.
-          </p>
-          <p className="text-bold text-muted-foreground max-w-2xl mx-auto">
-            <i>
-              -- Custom AI Solutions to Solve Complex, High-Impact Challenges --
-            </i>
           </p>
         </div>
 
