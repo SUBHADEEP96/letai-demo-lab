@@ -1,8 +1,8 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Copy, Play, Square } from "lucide-react";
-import { toast } from "@/lib/use-toast";
+
 import { cn } from "@/lib/utils";
 
 interface DemoLogProps {
@@ -32,16 +32,8 @@ export function DemoLog({
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(logs.join("\n"));
-      toast({
-        title: "Copied to clipboard",
-        description: "Demo logs have been copied successfully.",
-      });
     } catch (err) {
-      toast({
-        title: "Failed to copy",
-        description: "Could not copy logs to clipboard.",
-        variant: "destructive",
-      });
+      console.error("Failed to copy logs:", err);
     }
   };
 
