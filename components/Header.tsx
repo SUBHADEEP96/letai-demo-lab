@@ -13,7 +13,7 @@ export function Header() {
               Let's AI
             </Link>
             <div className=" brand-gradient flex items-center justify-center">
-              <FlaskConical className="h-5 w-5 text-white hidden md:block" />
+              <FlaskConical className="h-4 w-4 text-white hidden md:block" />
               <div className="text-white flex gap-2 font-bold text-sm md:hidden">
                 <span>Ls.Ai</span>
                 <FlaskConical className="h-3 w-3 text-white" />
