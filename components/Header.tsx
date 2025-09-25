@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BarChart3, Database, GitBranch } from "lucide-react";
+import { BarChart3, Database, GitBranch, FlaskConical } from "lucide-react";
 import Link from "next/link";
 
 export function Header() {
@@ -8,13 +8,17 @@ export function Header() {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Brand */}
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-lg brand-gradient flex items-center justify-center">
-              <span className="text-white font-bold text-sm">LA</span>
-            </div>
-            <Link className="text-xl font-bold" href="/">
-              letsAI-Lab
+          <div className="flex items-center space-x-2">
+            <Link className="text-xl font-bold hidden md:block" href="/">
+              Let's AI
             </Link>
+            <div className=" brand-gradient flex items-center justify-center">
+              <FlaskConical className="h-5 w-5 text-white hidden md:block" />
+              <div className="text-white flex gap-2 font-bold text-sm md:hidden">
+                <span>Ls.Ai</span>
+                <FlaskConical className="h-3 w-3 text-white" />
+              </div>
+            </div>
           </div>
 
           {/* CTA Buttons */}

@@ -110,7 +110,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="border-t pt-8 mt-16">
           <div className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} letsAI-Lab — Demo only
+            © {new Date().getFullYear()} letsAI-Lab
           </div>
         </footer>
       </main>
